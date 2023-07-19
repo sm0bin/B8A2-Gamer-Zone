@@ -190,14 +190,15 @@
     }
 
     .video-container img {
-        border-radius: 10px;
         width: 100%;
         /* margin-bottom: 24px; */
         /* position: relative; */
     }
 
     .video-container {
+        border-radius: 16px;
         position: relative;
+        border: 4px solid transparent;
     }
 
     .video-container .overlay {
@@ -213,11 +214,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: opacity 0.3s ease-in;
+        transition: all 0.3s ease-in;
     }
 
     .video-container:hover .overlay {
         opacity: 1;
+    }
+
+    .video-container:hover {
+        border: 4px solid #F948B2;
     }
 
     .overlay img {
@@ -392,26 +397,73 @@
 
         header,
         nav ul,
-        .hero,
         .video-cards,
         .play {
             flex-direction: column;
             gap: 24px;
         }
 
+        .hero {
+            flex-direction: column-reverse;
+            gap: 60px;
+            /* background-image: none; */
+            background-size: cover;
+            background-position: left center;
+
+        }
+
+        .hero-contents {
+            /* background-image: url('images/Group\ 14.png');
+            background-repeat: no-repeat;
+             padding: 130px 60px; */
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+
+
+        .hero img,
+        .video-card {
+            width: 100%;
+        }
+
+        .video-card {
+            margin-bottom: 48px;
+        }
+
         header,
-        section {
+        .hero,
+        .video,
+        .play,
+        .category,
+        footer {
             padding-left: 60px;
             padding-right: 60px;
         }
 
-        /* .video-card,
-        img {
+        .play-images {
 
-            width: 100%;
-        } */
+            width: auto;
+            text-align: right;
+            /* position: relative; */
+            margin-bottom: 0;
+            padding-bottom: 0;
+            /* margin: auto; */
+        }
 
-        .play h1,
+        .play-images .img-1 {
+            width: 80%;
+            /* vertical-align: middle; */
+            /* margin-left: auto; */
+            /* margin-right: 0px; */
+        }
+
+        .play-images .img-2 {
+            width: 40%;
+            translate: -50% 180px;
+        }
+
+        .play h2,
         .play p {
             text-align: center;
         }
@@ -420,6 +472,19 @@
         .footer-links-1 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+        }
+
+        .category-card {
+            padding: 4px;
+        }
+
+        .category-card img {
+            width: 32px;
+            height: auto;
+        }
+
+        .category-card h3 {
+            font-size: 0.5rem;
         }
 
         .social-links {

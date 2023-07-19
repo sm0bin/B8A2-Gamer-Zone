@@ -420,11 +420,22 @@
             padding-bottom: 50px;
         }
 
-
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
 
         .hero img,
         .video-card {
             width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
         }
 
         .video-card {
@@ -446,7 +457,7 @@
             width: auto;
             text-align: right;
             /* position: relative; */
-            margin-bottom: 0;
+            margin-bottom: -300px;
             padding-bottom: 0;
             /* margin: auto; */
         }
